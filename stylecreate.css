@@ -1,0 +1,131 @@
+.content{
+   margin-left: -20%;
+   margin-top: -5%;
+}
+.content-wrapper{
+    background-color: white;
+  
+}
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #333;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+}
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar Styles */
+.menu-area {
+    background: #f8f9fa; /* Background color of the menu area */
+    padding: 10px 0;
+}
+.navbar {
+    display: flex;
+    justify-content: center; /* Center the nav items */
+}
+.navbar-nav {
+    display: flex;
+    justify-content: space-between; /* Adjust spacing between nav items */
+}
+.navbar-nav li {
+    position: relative;
+}
+.navbar-nav li a {
+    padding: 10px 15px; /* Adjust padding for nav items */
+    display: block;
+}
+.navbar-nav .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff; /* Background color of dropdown menu */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Shadow for dropdown menu */
+}
+.navbar-nav li:hover .dropdown {
+    display: block;
+}
+.dropdown li a {
+    padding: 10px 15px;
+    white-space: nowrap;
+}
+/* Initial header styles */
+.header.shop {
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+/* Sticky header styles */
+.header.shop.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust menu items color when header is sticky */
+.header.shop.sticky .main-menu > li > a {
+    color: #000; /* Change to desired color */
+}
